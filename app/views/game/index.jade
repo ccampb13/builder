@@ -1,0 +1,21 @@
+extends ../shared/template
+
+block content
+  header
+  h1 Builder
+
+  form
+    input(type='text', name='username', autofocus=true, placeholder='Username')
+    .button#login Login
+  #username
+
+  #controls
+    button#seed Plant Seed
+    button#getforest Get Forest
+
+  #forest
+
+  footer
+
+block scripts
+  script(src='/js/es6/compiled/game.js')
